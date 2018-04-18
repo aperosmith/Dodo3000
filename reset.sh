@@ -3,6 +3,9 @@
 ## Le but de ce script est de remettre certaines configurations
 ## du Raspberry à leurs valeurs par défaut.
 
+echo -e "Reset : en cours..."
+
+
 # --------------------
 # Variables
 # --------------------
@@ -43,3 +46,6 @@ mysql -u $USERNAME -p$PASSWORD berceuse < berceuse.sql
 # --------------------
 # GitHub
 # --------------------
+
+
+echo -e "Reset : ok"
