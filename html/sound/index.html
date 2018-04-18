@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body>
+<div class="audio-player-cont">
+  <div class="logo">
+    <img src="note.png" alt="" class="noting">
+  </div>
+  <div class="player">
+    <div id="songTitle" class="song-title">My song title will goes here My song title will goes here</div>
+    <input id="songSlider" class="song-slider" type="range" min="0" step="1" onchange="seekSong()">
+    <div>
+      <div id="currentTime" class="current-time">00:00</div>
+      <div id="duration" class="duration">00:00</div>
+    </div>
+    <div class="controllers">
+      <img src="previousg.png" alt="" width="30px" onclick="previous();">
+      <img src="nextg.png" alt="" width="30px" onclick="backward();">
+      <img src="play.png" alt="" width="30px" onclick="playOrPauseSong();">
+      <img src="nextd.png" alt="" width="30px" onclick="forward();">
+      <img src="previousd.png" alt="" width="30px" onclick="next();">
+      <img src="volume-down.jpg" alt="" width="15px">
+      <input id="volumeslider" class="volume-slider" type="range" min="0" max="1" step="0.01"
+             onchange="adjustVolume();">
+      <img src="volume.png" alt="" width="15px" onclick="next();" style="margin-left: 2px;">
+
+    </div>
+    <div id="nextSongTitle" class="song-title"><b>Next Song :</b> Next song title goes here...
+
+    </div>
+  </div>
+</div>
+<script src="player.js">
+
+</script>
+
+<!--<script-->
+    <!--&lt;!&ndash;src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"&ndash;&gt;-->
+    <!--&lt;!&ndash;integrity="sha256-ugED92WALymbx9ylw12aADWaCrsQysE29DyvnAv5i3w="&ndash;&gt;-->
+    <!--&lt;!&ndash;crossorigin="anonymous"></script>&ndash;&gt;-->
+</body>
+</html>
