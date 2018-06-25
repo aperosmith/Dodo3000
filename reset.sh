@@ -19,6 +19,11 @@ date=$(date +"%y-%m-%d")
 mysqldump --all-databases > $backup_path/backup_base-$date.sql -u $USERNAME -p$PASSWORD
 mysql -u $USERNAME -p$PASSWORD berceuse < berceuse.sql
 
+if [ "$?" -eq 0 ]
+  then
+  else
+fi
+
 # --------------------
 # Configuration Web
 # --------------------
