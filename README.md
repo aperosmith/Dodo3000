@@ -1,3 +1,5 @@
+![](http://blog.xebia.fr/wp-content/uploads/2015/03/rass.png)
+
 # Workshop
 
 L'idée : créer une berceuse intelligente.
