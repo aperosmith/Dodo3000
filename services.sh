@@ -5,3 +5,10 @@
 service cron start
 service mysql start
 service apache2 start
+
+
+##  Démarrer le programme Berceuse
+# /root/berceuse.c
+
+
+## Jouer un son quand le Raspberry est opérationnel
