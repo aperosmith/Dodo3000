@@ -4,9 +4,9 @@
 
 # Workshop
 
-L'idée : créer une berceuse intelligente.
+Projet : créer une berceuse intelligente.
 
-La berceuse doit se mettre en route quand le bébé pleure.
+La musique doit se lancer quand le bébé a pleuré pendant quelques secondes.
 
 Fonctions requises :
 - enregistrement des déclenchements
