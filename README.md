@@ -1,4 +1,5 @@
-![](http://blog.xebia.fr/wp-content/uploads/2015/03/rass.png)
+<img src="http://blog.xebia.fr/wp-content/uploads/2015/03/rass.png" align="center" width="200"/>
+
 
 # Workshop
 
