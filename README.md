@@ -1,5 +1,6 @@
-<img src="http://blog.xebia.fr/wp-content/uploads/2015/03/rass.png" align="center" width="200"/>
-
+<p align="center">
+<img src="http://blog.xebia.fr/wp-content/uploads/2015/03/rass.png" width="200"/>
+</p>
 
 # Workshop
 
