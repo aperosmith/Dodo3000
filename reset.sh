@@ -22,7 +22,7 @@ date=$(date +"%y-%m-%d")
 # Base de données
 # --------------------
 mysqldump --all-databases > $backup_path/backup_base-$date.sql -u $USERNAME -p$PASSWORD
-mysql -u $USERNAME -p$PASSWORD berceuse < berceuse.sql
+mysql -u $USERNAME -p$PASSWORD berceuse < /root/Workshop/config/berceuse.sql
 
 # if [ "$?" -eq 0 ]
 #   then
