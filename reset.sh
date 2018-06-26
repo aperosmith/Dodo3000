@@ -10,9 +10,11 @@ echo -e "Reset : en cours..."
 # Variables
 # --------------------
 
+
+mkdir /var/backups/
 USERNAME=$(cat /root/username)
 PASSWORD=$(cat /root/password)
-backup_path="/root/backups"
+backup_path="/var/backups"
 date=$(date +"%y-%m-%d")
 
 
