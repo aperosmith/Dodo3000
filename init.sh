@@ -1,5 +1,7 @@
 #!/bin/bash
 
+hostname ronfleur
+
 log_path="/var/log/workshop"
 date=$(date +"%y-%m-%d")
 
