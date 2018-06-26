@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo -e "Redémarrage des services..."
+
 ##  Démarrer les services linux de base.
 ##  Ces services devraient être automatiquement démarrés.
 service cron start
