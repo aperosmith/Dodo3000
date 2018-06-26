@@ -1,6 +1,6 @@
 #!/bin/bash
 
-log_path="/var/log/workshop/"
+log_path="/var/log/workshop"
 date=$(date +"%y-%m-%d")
 
 service apache2 stop
