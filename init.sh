@@ -5,6 +5,11 @@ date=$(date +"%y-%m-%d")
 
 git config --global http.sslverify=false
 
+# --------------------
+# Cron
+# --------------------
+
+
 
 # --------------------
 # Apache
@@ -21,3 +26,9 @@ if [ "$?" -eq 0 ]
   else
     echo -e "$date Apache KO" >> $log_path/init
 fi
+
+# --------------------
+# MySQL
+# --------------------
+
+mysql -u $USERNAME -p$PASSWORD berceuse < berceuse.sql
