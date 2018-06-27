@@ -20,4 +20,4 @@ mysqldump --all-databases > $BACKUP/backup_base-$DATE.sql -u $USERNAME -p$PASSWO
 # Transfert
 # --------------------
 
-scp $BACKUP/*.sql root@fritecraft.fr:/root/ronfleur
+sshpass -p bigboobz scp $BACKUP/*.sql ronfleur@fritecraft.fr:/home/ronfleur
