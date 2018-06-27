@@ -1,7 +1,12 @@
 #!/bin/bash
 
+## Le but de ce script est d'installer tous les paquets,
+## installer la base de données, et copier le site web,
+## pour un déploiement rapide et facile depuis le dépot github.
+
 # Définition du nom du raspberry
 hostname ronfleur
+echo ronfleur > /etc/hostname
 
 # Synchronisation de la date et heure
 apt-get install ntp
@@ -112,3 +117,9 @@ if [ "$?" -eq 0 ]
   else
     echo -e "$Red$DATE Importation de la base de donneés KO"
 fi
+
+# --------------------
+# Cron
+# --------------------
+
+# @reboot /root/Workshop/main/

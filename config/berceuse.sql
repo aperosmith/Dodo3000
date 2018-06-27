@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 26 juin 2018 à 12:01
+-- Généré le :  mer. 27 juin 2018 à 13:07
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.1.9
 
@@ -41,14 +41,7 @@ CREATE TABLE IF NOT EXISTS `config` (
 --
 
 INSERT INTO `config` (`ip`, `volume`, `longeurSon`, `etat`) VALUES
-('127.0.0.0', '1.000', 100, 1),
-('127.000.000.000', '1.000', 150, 0),
-('127.0.0.1', '1.000', 150, 0),
-('127.0.0.2', '1.000', 150, 1),
-('127.0.0.0', '1.000', 150, 1),
-('127.0.0.0', '0.500', 1520, 0),
-('127.0.0.0', '0.300', 100, 0),
-('127.0.0.0', '0.578', 300, 0);
+('127.0.0.0', '0.333', 300, 0);
 
 -- --------------------------------------------------------
 
@@ -62,8 +55,19 @@ CREATE TABLE IF NOT EXISTS `contact` (
   `prenom` varchar(250) NOT NULL,
   `adresse` varchar(250) NOT NULL,
   `telephone` text NOT NULL,
-  `mail` varchar(250) NOT NULL
+  `mail` varchar(250) NOT NULL,
+  UNIQUE KEY `nom` (`nom`),
+  UNIQUE KEY `prenom` (`prenom`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `contact`
+--
+
+INSERT INTO `contact` (`nom`, `prenom`, `adresse`, `telephone`, `mail`) VALUES
+('caca', 'caca', 'caca', 'caca', 'caca'),
+('mam', 'mama', 'mama', '0321542536', 'mama'),
+('papa', 'papa', 'papa', '0312542569', 'papa');
 
 -- --------------------------------------------------------
 
@@ -74,11 +78,19 @@ CREATE TABLE IF NOT EXISTS `contact` (
 DROP TABLE IF EXISTS `enfant`;
 CREATE TABLE IF NOT EXISTS `enfant` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(255) NOT NULL,
   `prenom` varchar(255) NOT NULL,
+  `nom` varchar(250) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  UNIQUE KEY `id` (`id`),
+  UNIQUE KEY `prenom` (`prenom`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `enfant`
+--
+
+INSERT INTO `enfant` (`id`, `prenom`, `nom`) VALUES
+(1, 'babou', 'bibou');
 
 -- --------------------------------------------------------
 
@@ -90,14 +102,21 @@ DROP TABLE IF EXISTS `event`;
 CREATE TABLE IF NOT EXISTS `event` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `idEnfant` int(11) NOT NULL,
-  `début` time NOT NULL,
+  `debut` time NOT NULL,
   `fin` time NOT NULL,
-  `durée` time NOT NULL,
+  `duree` time NOT NULL,
   `type` tinyint(1) NOT NULL,
   `date` date NOT NULL,
   UNIQUE KEY `id` (`id`),
   KEY `idEnfant` (`idEnfant`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `event`
+--
+
+INSERT INTO `event` (`id`, `idEnfant`, `debut`, `fin`, `duree`, `type`, `date`) VALUES
+(1, 1, '08:12:08', '08:12:08', '08:12:08', 1, '2018-06-06');
 
 --
 -- Contraintes pour les tables déchargées
