@@ -63,6 +63,15 @@ if [ "$?" -eq 0 ]
     echo -e "$Red$DATE Installation PhpMyAdmin KO"
 fi
 
+echo -e "Installation sendmail..."
+apt-get install --assume-yes -V sendmail
+if [ "$?" -eq 0 ]
+  then
+    echo -e "$Green$DATE Installation sendmail ok !"
+  else
+    echo -e "$Red$DATE Installation sendmail KO"
+fi
+
 # --------------------
 # Déploiement Site Web
 # --------------------
