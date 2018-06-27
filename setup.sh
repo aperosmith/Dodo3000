@@ -97,7 +97,7 @@ fi
 # --------------------
 
 echo -e "Installation de la base de données..."
-mysql -u root -p berceuse < berceuse.sql
+mysql -u root -p berceuse < ./config/berceuse.sql
 if [ "$?" -eq 0 ]
   then
     echo -e "$Green$date Importation de la base de donneés OK !"

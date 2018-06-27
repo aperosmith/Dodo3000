@@ -14,8 +14,11 @@ Fonctions requises :
 
 # Installation
 
-git config --global http.sslverify=false
+En tant qu'utilisateur root, ou avec sudo :
 
-apt-get install ntp
-systemctl restart ntp
-systemctl enable ntp 
+```
+cd /root/
+git config --global http.sslverify=false
+git clone http://github.com/Ventouz/Workshop
+./setup.sh
+```
