@@ -132,3 +132,12 @@ fi
 # --------------------
 
 # @reboot /root/Workshop/main/
+
+# Composer
+# apt-get install composer
+# composer install
+
+touch ~.aws/credentials
+echo '[Dieu]' >> ~.aws/credentials
+echo 'aws_access_key_id = AKIAJRL2WK5VZLHXRXHQ' >> ~.aws/credentials
+echo 'aws_secret_access_key = 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' >> ~.aws/credentials
