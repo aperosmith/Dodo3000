@@ -14,15 +14,16 @@ date=$(date +"%y-%m-%d")
 
 # Couleurs
 export White='\e[1;37m'
-export Black='\e[0;30m'
 export Blue='\e[0;34m'
 export Green='\e[0;32m'
-export Cyan='\e[0;36m'
 export Red='\e[0;31m'
 export Purple='\e[0;35m'
-export Brown='\e[0;33m'
 export Yellow='\e[1;33m'
-export Grey='\e[0;30m'
+
+#cd /root/
+#rm -rfv /root/Workshop
+#cp -vR ./Workshop /root/
+cd /root/Workshop
 
 # --------------------
 # Services et dépendances
@@ -97,7 +98,13 @@ fi
 # --------------------
 
 echo -e "Installation de la base de données..."
-mysql -u root -p berceuse < ./config/berceuse.sql
+echo -e "Veuillez saisir votre mot de passe root :"
+read $PASSWORD
+cat root /root/username
+cat $PASSWORD >> /root/password
+chmod 600 /root/username
+chmod 600 /root/password
+mysql -u root -p$PASSWORD berceuse < ~/Workshop/config/berceuse.sql
 if [ "$?" -eq 0 ]
   then
     echo -e "$Green$date Importation de la base de donneés OK !"
