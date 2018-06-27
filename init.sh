@@ -6,8 +6,8 @@ apt-get install ntp
 systemctl restart ntp
 systemctl enable ntp
 
-log_path="/var/log/workshop"
-date=$(date +"%y-%m-%d")
+LOG="/var/log/workshop"
+DATE=$(date +"%y-%m-%d")
 
 git config --global http.sslverify=false
 
@@ -33,9 +33,9 @@ cp -v ./config/000-default.conf /etc/apache2/sites-available/
 service apache2 start
 if [ "$?" -eq 0 ]
   then
-    echo -e "$date Apache OK" >> $log_path/init
+    echo -e "$DATE Apache OK" >> $LOG/init
   else
-    echo -e "$date Apache KO" >> $log_path/init
+    echo -e "$DATE Apache KO" >> $LOG/init
 fi
 
 # --------------------
