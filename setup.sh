@@ -85,6 +85,7 @@ if [ "$?" -eq 0 ]
     echo -e "$Red$date Redemarrage du service Apache2 KO"
 fi
 echo -e "Copie du site web /var/www/html"
+rm -rfv /var/www/html
 cp -R -v ~/Workshop/html /var/www/html
 if [ "$?" -eq 0 ]
   then
