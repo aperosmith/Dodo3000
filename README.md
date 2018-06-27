@@ -11,3 +11,11 @@ La musique doit se lancer quand le bébé a pleuré pendant quelques secondes.
 Fonctions requises :
 - enregistrement des déclenchements
 - clonage facile
+
+# Installation
+
+git config --global http.sslverify=false
+
+apt-get install ntp
+systemctl restart ntp
+systemctl enable ntp 
