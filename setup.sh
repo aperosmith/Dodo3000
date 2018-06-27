@@ -9,8 +9,8 @@ systemctl restart ntp
 systemctl enable ntp
 
 # Definition des variables
-log_path="/var/log/workshop"
-date=$(date +"%y-%m-%d")
+LOG="/var/log/workshop"
+DATE=$(date +"%y-%m-%d")
 
 # Couleurs
 export White='\e[1;37m'
@@ -35,27 +35,27 @@ echo -e "Installation MySQL..."
 apt-get install --assume-yes -V mysql-server
 if [ "$?" -eq 0 ]
   then
-    echo -e "$Green$date Installation MySQL ok !"
+    echo -e "$Green$DATE Installation MySQL ok !"
   else
-    echo -e "$Red$date Installation MySQL KO"
+    echo -e "$Red$DATE Installation MySQL KO"
 fi
 
 echo -e "Installation Apache2..."
 apt-get install --assume-yes -V apache2
 if [ "$?" -eq 0 ]
   then
-    echo -e "$Green$date Installation Apache2 OK !"
+    echo -e "$Green$DATE Installation Apache2 OK !"
   else
-    echo -e "$Red$date Installation Apache2 KO"
+    echo -e "$Red$DATE Installation Apache2 KO"
 fi
 
 echo -e "Installation PhpMyAdmin..."
 apt-get install --assume-yes -V phpmyadmin
 if [ "$?" -eq 0 ]
   then
-    echo -e "$Green$date Installation PhpMyAdmin OK !"
+    echo -e "$Green$DATE Installation PhpMyAdmin OK !"
   else
-    echo -e "$Red$date Installation PhpMyAdmin KO"
+    echo -e "$Red$DATE Installation PhpMyAdmin KO"
 fi
 
 # --------------------
@@ -66,7 +66,7 @@ echo -e "Installation portail web..."
 service apache2 stop
 if [ "$?" -eq 0 ]
   then
-    echo -e "$Green$date Arret du service Apache2 OK !"
+    echo -e "$Green$DATE Arret du service Apache2 OK !"
     echo -e "Installation configuration phpmyadmin web..."
     rm -f /etc/phpmyadmin/apache.conf
     cp -v ./config/apache.cong /etc/apache2/apache2.conf
@@ -74,24 +74,24 @@ if [ "$?" -eq 0 ]
     rm -f /etc/apache2/sites-available/000-default.conf
     cp -v ./config/000-default.conf /etc/apache2/sites-available/
   else
-    echo -e "$Red$date Arret du service Apache2 KO"
+    echo -e "$Red$DATE Arret du service Apache2 KO"
 fi
 echo -e "Redemarrage du service Apache2 ..."
 service apache2 start
 if [ "$?" -eq 0 ]
   then
-    echo -e "$Green$date Redemarrage du service Apache2 OK !"
+    echo -e "$Green$DATE Redemarrage du service Apache2 OK !"
   else
-    echo -e "$Red$date Redemarrage du service Apache2 KO"
+    echo -e "$Red$DATE Redemarrage du service Apache2 KO"
 fi
 echo -e "Copie du site web /var/www/html"
 rm -rfv /var/www/html
 cp -R -v ~/Workshop/html /var/www/html
 if [ "$?" -eq 0 ]
   then
-    echo -e "$Green$date Copie du site web OK !"
+    echo -e "$Green$DATE Copie du site web OK !"
   else
-    echo -e "$Red$date Copie du site web KO"
+    echo -e "$Red$DATE Copie du site web KO"
 fi
 
 # --------------------
@@ -108,7 +108,7 @@ chmod 600 /root/password
 mysql -u root -p$PASSWORD berceuse < ~/Workshop/config/berceuse.sql
 if [ "$?" -eq 0 ]
   then
-    echo -e "$Green$date Importation de la base de donneés OK !"
+    echo -e "$Green$DATE Importation de la base de donneés OK !"
   else
-    echo -e "$Red$date Importation de la base de donneés KO"
+    echo -e "$Red$DATE Importation de la base de donneés KO"
 fi
