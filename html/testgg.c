@@ -4,6 +4,6 @@
 
 int main (void)
 {
-	system("php -f testgg.php");
+	system("php -f event.php");
 	perror("execlp");
 }
