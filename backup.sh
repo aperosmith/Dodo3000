@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## Le but de ce script est de faire une extraction de la
+## base de données, et de la transferer sur un serveur distant.
+
 # --------------------
 # Variables
 # --------------------

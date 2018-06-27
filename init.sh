@@ -12,12 +12,6 @@ DATE=$(date +"%y-%m-%d")
 git config --global http.sslverify=false
 
 # --------------------
-# Cron
-# --------------------
-
-
-
-# --------------------
 # Apache
 # --------------------
 

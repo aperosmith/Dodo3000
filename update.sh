@@ -1,7 +1,9 @@
 #!/bin/bash
 
-cd /root/Workshop
+## Le but de ce script est de copier les nouveaux
+## fichiers du dépot vers leur localisation.
 
+cd /root/Workshop
 
 # --------------------
 # Services et dépendances
