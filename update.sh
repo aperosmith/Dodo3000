@@ -11,6 +11,10 @@ cd /root/Workshop
 
 echo -e "Installation des paquets requis..."
 
+# --------------------
+# MySQL
+# --------------------
+
 echo -e "Installation MySQL..."
 apt-get install --assume-yes -V mysql-server
 if [ "$?" -eq 0 ]
@@ -20,6 +24,10 @@ if [ "$?" -eq 0 ]
     echo -e "$Red$date Installation MySQL KO"
 fi
 
+# --------------------
+# Apache2
+# --------------------
+
 echo -e "Installation Apache2..."
 apt-get install --assume-yes -V apache2
 if [ "$?" -eq 0 ]
@@ -28,6 +36,10 @@ if [ "$?" -eq 0 ]
   else
     echo -e "$Red$date Installation Apache2 KO"
 fi
+
+# --------------------
+# PhpMyAdmin
+# --------------------
 
 echo -e "Installation PhpMyAdmin..."
 apt-get install --assume-yes -V phpmyadmin
@@ -39,7 +51,7 @@ if [ "$?" -eq 0 ]
 fi
 
 # --------------------
-# Déploiement Site Web
+# Site Web
 # --------------------
 
 echo -e "Copie du site web /var/www/html"

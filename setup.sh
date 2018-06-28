@@ -5,8 +5,8 @@
 ## pour un déploiement rapide et facile depuis le dépot github.
 
 # Définition du nom du raspberry
-hostname ronfleur
-echo ronfleur > /etc/hostname
+hostname Dodo3000
+echo Dodo3000 > /etc/hostname
 
 # Synchronisation de la date et heure
 apt-get install ntp
@@ -137,7 +137,7 @@ fi
 # apt-get install composer
 # composer install
 
-touch ~.aws/credentials
-echo '[Dieu]' >> ~.aws/credentials
-echo 'aws_access_key_id = AKIAJRL2WK5VZLHXRXHQ' >> ~.aws/credentials
-echo 'aws_secret_access_key = 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' >> ~.aws/credentials
+#touch ~.aws/credentials
+#echo '[Dieu]' >> ~.aws/credentials
+#echo 'aws_access_key_id = AKIAJRL2WK5VZLHXRXHQ' >> ~.aws/credentials
+#echo 'aws_secret_access_key = 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' >> ~.aws/credentials
