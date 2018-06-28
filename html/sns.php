@@ -14,7 +14,7 @@ $message = array_pop( $argv );
 
 $payload = array(
     'TopicArn' => 'arn:aws:sns:eu-west-1:003852675037:Dodo3000',
-    'Message' => 'Votre enfant pleure',
+    'Message' => 'votre enfant est en pls, merci de votre comprehension',
     'MessageStructure' => 'string',
 );
 
