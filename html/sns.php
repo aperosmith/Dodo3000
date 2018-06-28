@@ -4,7 +4,7 @@ use Aws\Sns\SnsClient;
 
 $client = SnsClient::factory(
     array(
-        'profile' => 'Dieu',
+        'profile' => 'Dodo3000',
         'region'  => 'eu-west-1',
         'version' => 'latest',
     )
@@ -13,7 +13,7 @@ $client = SnsClient::factory(
 $message = array_pop( $argv );
 
 $payload = array(
-    'TopicArn' => 'arn:aws:sns:eu-west-1:063295812460:Dieu',
+    'TopicArn' => 'arn:aws:sns:eu-west-1:063295812460:Dodo3000',
     'Message' => $message,
     'MessageStructure' => 'string',
 );
