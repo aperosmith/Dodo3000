@@ -6,8 +6,6 @@
 int musique(void)
 {
         pid_t   p;
-       //char kill[20] = "kill-s 9 ";
-
         p = fork();
 
         if(p < 0)
@@ -22,8 +20,6 @@ int musique(void)
         else
         {
                 printf("le pro a comme pid %d\n Press enter to quit\n", p);
-                //sprintf(kill,"%s%d", kill,p);
-                //system(kill);
                 printf("Done");
         }
 	return 0;
@@ -74,12 +70,13 @@ int main(void)
 				system("php -f sns.php");
 				musique();
 				couleur();
-				//delay(80000);
 				system("php -f eventEnd.php");
+				digitalWrite(21, LOW);
+				digitalWrite(22, LOW);
+				digitalWrite(23, LOW);
 				score = 0;
         			bruitMax = 0;
 				malus = 0;
-				printf("%d\n", score);
 			}
 
 		}
