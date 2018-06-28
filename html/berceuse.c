@@ -64,7 +64,7 @@ int main(void)
 		if(i == 0)
 		{
 			++score;
-			if (score == 2400)
+			if (score == 2500)
 			{
 				system("php -f eventStart.php");
 				system("php -f sns.php");
