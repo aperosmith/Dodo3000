@@ -45,7 +45,7 @@
 
           <!-- Feature -->
           <section>
-            <a href="resume.php" class="image featured"><img src="images/pic01.jpg" alt=""/></a>
+            <a href="event.php" class="image featured"><img src="images/pic01.jpg" alt=""/></a>
             <header>
               <h3 class="title_box"><i class="fa fa-bed"></i> Résumés des nuits </h3>
             </header>
