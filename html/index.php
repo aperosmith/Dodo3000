@@ -57,7 +57,7 @@
         <div class="col-4 col-6-medium col-12-small">
 
           <section>
-            <a href="#" class="image featured"><img src="images/pic02.jpg" alt=""/></a>
+            <a href="login.php" class="image featured"><img src="images/pic02.jpg" alt=""/></a>
             <header>
               <h3 class="title_box"><i class="fa fa-child"></i> Inscrivez-vous et votre enfant </h3>
             </header>
