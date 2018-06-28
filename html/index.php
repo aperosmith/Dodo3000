@@ -17,13 +17,6 @@
   <!-- Header -->
   <section id="header">
     <div class="container">
-      <div>
-        <div style="position: absolute; top: 5px; left: 5px;">
-          <a href="login.php">
-            <input type="button" value="Se Connecter">
-          </a>
-        </div>
-      </div>
       <!-- Logo -->
       <h1 id="logo"><a href="index.php">Accueil Bébé</a></h1>
       <p>Ceci est un template test pour voir si c'est beau</p>
