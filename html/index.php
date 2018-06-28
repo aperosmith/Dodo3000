@@ -1,128 +1,97 @@
-
-
-
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
-  <!--<link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css">-->
-  <link rel="stylesheet" href="boostrap.min.css">
+  <title>Interface Baby</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="shortcut icon" type="image/x-icon" href="images/groot.jpg"/>
   <link rel="stylesheet" href="style.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
-<!--  heure -->
-  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-  <title>Bienvenue</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 </head>
-<body>
 
+<body class="homepage is-preload">
+<div id="page-wrapper">
 
-<br>
-<br>
-<br>
-<main role="main">
-
-
-  <section class="jumbotron text-center">
-
-    <div class="clock">
-      <div id="ejs_heure"></div>
+  <!-- Header -->
+  <section id="header">
+    <div class="container">
+      <div>
+        <div style="position: absolute; top: 5px; left: 5px;">
+          <a href="login.php">
+            <input type="button" value="Se Connecter">
+          </a>
+        </div>
+      </div>
+      <!-- Logo -->
+      <h1 id="logo"><a href="index.php">Accueil Bébé</a></h1>
+      <p>Ceci est un template test pour voir si c'est beau</p>
 
     </div>
+  </section>
+    <div style="position: absolute; top: 5px; right: 5px;">
+        <input type="button" value="ON/OFF">
+    </div>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="container">
+      <header>
+        <h2>Tout pour faire dormir votre enfant <strong>tranquillement</strong>!</h2>
+      </header>
+      <div class="row aln-center">
+        <div class="col-4 col-6-medium col-12-small">
+
+          <!-- Feature -->
+          <section>
+            <a href="resume.php" class="image featured"><img src="images/pic01.jpg" alt=""/></a>
+            <header>
+              <h3 class="title_box"><i class="fa fa-bed"></i> Résumés des nuits </h3>
+            </header>
+            <p>Cette Application permettra à <strong>votre bébé</strong> de se rendormir en cas de problème dans son
+              sommeil. Il jouera une berceuse lorsqu'il pleurera.</p>
+          </section>
+
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+
+          <section>
+            <a href="#" class="image featured"><img src="images/pic02.jpg" alt=""/></a>
+            <header>
+              <h3 class="title_box"><i class="fa fa-child"></i> Inscrivez-vous et votre enfant </h3>
+            </header>
+            <p>Ici vous pouvez vous inscrire <strong>vous</strong> ou <strong>votre bébé</strong> pour pouvoir gérer vos
+              enfants ainsi que le contact sur votre téléphone ou adresse Mail</p>
+
+          </section>
+
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
 
 
+          <section>
+            <a href="param.php" class="image featured"><img src="images/pic03.jpg" alt=""/></a>
+            <header>
+              <h3 class="title_box"><i class="fa fa-cog"></i> Paramètres de l'application </h3>
+            </header>
+            <p>Cette partie vous permettra de régler <strong>votre application</strong> simplement et de manière
+              intuitive.
+            </p>
+          </section>
+
+        </div>
+        <div class="col-12">
+          <ul class="actions">
+            <li><a href="SavoirPlus.html" class="button icon fa-file">En Savoir Plus</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
 
 
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img/baby1.png"
-                 alt="Card image cap">
-            <div class="card-body">
-              <h1 class="title_box1">Resumées des nuits</h1>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img/baby2.png"
-                 alt="Card image cap">
-            <div class="card-body">
-              <h1 class="title_box2">Nouveaux Bébé <br>New Parent</h1>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img/baby3.png"
-                 alt="Card image cap">
-            <div class="card-body">
-              <h1 class="title_box3">Configuration sons et autre</h1>
-
-            </div>
-          </div>
-        </div>
-
-    </div>
-  </div>
-
-</main>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-<SCRIPT LANGUAGE="JavaScript">
-  /*
-  Source :  http://www.editeurjavascript.com
-   Adaptation : http://www.outils-web.com
-  */
-  function HeureCheckEJS()
-  {
-    krucial = new Date;
-    heure = krucial.getHours();
-    min = krucial.getMinutes();
-    sec = krucial.getSeconds();
-    jour = krucial.getDate();
-    mois = krucial.getMonth()+1;
-    annee = krucial.getFullYear();
-    if (sec < 10)
-      sec0 = "0";
-    else
-      sec0 = "";
-    if (min < 10)
-      min0 = "0";
-    else
-      min0 = "";
-    if (heure < 10)
-      heure0 = "0";
-    else
-      heure0 = "";
-    DinaHeure = heure0 + heure + ":" + min0 + min + ":" + sec0 + sec;
-    which = DinaHeure
-    if (document.getElementById){
-      document.getElementById("ejs_heure").innerHTML=which;
-    }
-    setTimeout("HeureCheckEJS()", 1000)
-  }
-  window.onload = HeureCheckEJS;
-</SCRIPT>
 </body>
+
 </html>

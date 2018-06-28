@@ -18,7 +18,7 @@
 	$event = array();
 
 	$configIndex = array("ip","volume","longeurSon","etat");
-	$contactIndex = array("nom","prenom","adresse","telephone","mail",);
+	$contactIndex = array("nom","prenom","telephone","mail",);
 	$enfantIndex = array("id","nom","prenom",);
 	$eventIndex = array("id","idEnfant","debut","fin","duree","type","date",);
 	$Pi = array('config'=>$config,'contact'=>$contact,'enfant'=>$enfant,'event'=>$event);
@@ -45,7 +45,7 @@
 	$i++;
 	$o = 0;
 	}
-
+	
 	function chk($num){
 		if(strlen($num) === 1){
 			$num = "0".$num;

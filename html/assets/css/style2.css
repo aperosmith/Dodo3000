@@ -1,0 +1,35 @@
+.title_box{
+  font-size: 25px;
+  font-family: 'Signika', sans-serif;
+}
+.infos{
+  font-family: 'Varela Round', sans-serif;
+}
+
+#header p {
+  /*text-transform: uppercase;*/
+  /*font-weight: 400;*/
+  color: #212121;
+  margin: 2.5em 0 0 0;
+  font-size: 0.85em;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+form input[type="text"], form input[type="email"] input[type="password"], form select, form textarea {
+  -moz-transition: background-color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  -webkit-appearance: none;
+  display: block;
+  border: 0;
+  background: #fcfcfc;
+  width: 100%;
+  box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  line-height: 1.25em;
+  padding: 0.75em 1em 0.75em 1em;
+}
