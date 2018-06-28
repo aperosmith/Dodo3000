@@ -16,7 +16,7 @@ echo -e "Installation des paquets requis..."
 # --------------------
 
 echo -e "Installation MySQL..."
-apt-get install --assume-yes -V mysql-server
+apt-get update --assume-yes -V mysql-server
 if [ "$?" -eq 0 ]
   then
     echo -e "$Green$date Installation MySQL ok !"
@@ -29,7 +29,7 @@ fi
 # --------------------
 
 echo -e "Installation Apache2..."
-apt-get install --assume-yes -V apache2
+apt-get update --assume-yes -V apache2
 if [ "$?" -eq 0 ]
   then
     echo -e "$Green$date Installation Apache2 OK !"
@@ -42,7 +42,7 @@ fi
 # --------------------
 
 echo -e "Installation PhpMyAdmin..."
-apt-get install --assume-yes -V phpmyadmin
+apt-get update --assume-yes -V phpmyadmin
 if [ "$?" -eq 0 ]
   then
     echo -e "$Green$date Installation PhpMyAdmin OK !"
