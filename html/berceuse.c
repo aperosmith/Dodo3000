@@ -34,7 +34,7 @@ void couleur(void)
 	pinMode(21, OUTPUT);
 	pinMode(22, OUTPUT);
 	pinMode(23, OUTPUT);
-	pinMode(25, INPUT);
+pinMode(25, INPUT);
 	int compteur = 0;
 	while(compteur < 24)
 	{
@@ -68,7 +68,7 @@ int main(void)
 		if(i == 0)
 		{
 			++score;
-			if (score == 2200)
+			if (score == 2400)
 			{
 				system("php -f eventStart.php");
 				system("php -f sns.php");
