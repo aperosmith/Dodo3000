@@ -16,7 +16,7 @@ En tant qu'utilisateur root, ou avec sudo :
 
 ```
 cd /root/
-git config --global http.sslverify=false
+git config --global http.sslverify false
 git clone http://github.com/Ventouz/Workshop
 cd Workshop
 ./setup.sh
