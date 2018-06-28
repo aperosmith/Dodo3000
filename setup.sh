@@ -72,6 +72,10 @@ if [ "$?" -eq 0 ]
     echo -e "$Red$DATE Installation sendmail KO"
 fi
 
+apt-get install --assume-yes -V screen
+apt-get install --assume-yes -V tmux
+
+
 # --------------------
 # Déploiement Site Web
 # --------------------
@@ -131,7 +135,7 @@ fi
 # Cron
 # --------------------
 
-# @reboot /root/Workshop/main/
+# @reboot screen -S berceuse /root/Workshop/html/berceuse
 
 # Composer
 # apt-get install composer
