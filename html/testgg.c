@@ -4,6 +4,8 @@
 
 int main (void)
 {
-	system("php -f event.php");
+	system("php -f eventStart.php");
 	perror("execlp");
+        system("php -f eventEnd.php");
+        perror("execlp");
 }

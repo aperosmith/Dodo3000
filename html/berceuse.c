@@ -6,7 +6,7 @@
 int musique(void)
 {
         pid_t   p;
-        char kill[20] = "kill-s 9 ";
+       //char kill[20] = "kill-s 9 ";
 
         p = fork();
 
@@ -17,7 +17,7 @@ int musique(void)
         }
         else if (p == 0)
         {
-                execlp("omxplayer", "omxplayer", "jean.mp3", "", NULL);
+                execlp("omxplayer", "omxplayer", "berceuse.mp3", "", NULL);
         }
         else
         {
@@ -28,29 +28,31 @@ int musique(void)
         }
 	return 0;
 }
-int couleur(void)
+void couleur(void)
 {
 	wiringPiSetup();
 	pinMode(21, OUTPUT);
 	pinMode(22, OUTPUT);
 	pinMode(23, OUTPUT);
 	pinMode(25, INPUT);
-	while(1)
+	int compteur = 0;
+	while(compteur < 24)
 	{
 		digitalWrite(21, HIGH);
 		delay(1000);
 		digitalWrite(21, LOW);
-		delay(200);
+		delay(84);
 		digitalWrite(22, HIGH);
 		delay(1000);
 		digitalWrite(22, LOW);
-		delay(200);
+		delay(84);
 		digitalWrite(23, HIGH);
 		delay(1000);
 		digitalWrite(23, LOW);
-		delay(200);
+		delay(84);
+		compteur++;
 	}
-	return 0;
+	compteur = 0;
 }
 
 int main(void)
@@ -68,14 +70,18 @@ int main(void)
 			++score;
 			if (score == 2200)
 			{
+				system("php -f eventStart.php");
+				system("php -f sns.php");
 				musique();
 				couleur();
-				delay(80000);
-				digitalWrite(21, LOW);
-				digitalWrite(22, LOW);
-				digitalWrite(23, LOW);
+				//delay(80000);
+				system("php -f eventEnd.php");
 				score = 0;
+        			bruitMax = 0;
+				malus = 0;
+				printf("%d\n", score);
 			}
+
 		}
 		else
 		{
