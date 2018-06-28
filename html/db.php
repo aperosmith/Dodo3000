@@ -3,13 +3,13 @@
 	/* DEBUT D'INITIALISATION DE LA CONNEXION DB */
 	try
 	{
-		$bdd = new PDO('mysql:host=localhost;dbname=berceuse', "root", ""); 
+		$bdd = new PDO('mysql:host=localhost;dbname=berceuse', "pi", "framboise666");
 		$bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ); 
 	}
 	catch(PDOException $e)
 	{
 		echo "Impossible de se connecter";
-		die(); 
+		die();
 	}
 	/* FIN D'INITIALISATION DE LA CONNEXION DB */
 	$config = array();
@@ -31,7 +31,7 @@
 	$i = 0;$o = 0;
 
 	foreach ($PiIndex as $order => $index) {
-		
+
 		foreach ($index as $key => $value) {
 
 		$req ='SELECT `'.$value.'` FROM `'.$order.'`';

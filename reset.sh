@@ -20,6 +20,10 @@ date=$(date +"%y-%m-%d")
 # --------------------
 
 mysqldump --all-databases > $backup_path/backup_base-$date.sql -u $USERNAME -p$PASSWORD
+
+#mysql drop database berceuse;
+
 mysql -u $USERNAME -p$PASSWORD berceuse < /root/Workshop/config/berceuse.sql
+
 
 echo -e "Reset : ok"
