@@ -19,7 +19,7 @@ service apache2 stop
 echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
 
 rm -f /etc/phpmyadmin/apache.conf
-cp -v ./config/apache.cong /etc/apache2/apache2.conf
+cp -v ./config/apache.conf /etc/apache2/apache2.conf
 
 rm -f /etc/apache2/sites-available/000-default.conf
 cp -v ./config/000-default.conf /etc/apache2/sites-available/
