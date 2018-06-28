@@ -21,8 +21,8 @@ date=$(date +"%y-%m-%d")
 
 mysqldump --all-databases > $backup_path/backup_base-$date.sql -u $USERNAME -p$PASSWORD
 
-myqsl -u $USERNAME -p$PASSWORD -Bse "drop database berceuse;"
-myqsl -u $USERNAME -p$PASSWORD -Bse "create database berceuse;"
+mysql -u $USERNAME -p$PASSWORD -Bse "drop database berceuse;"
+mysql -u $USERNAME -p$PASSWORD -Bse "create database berceuse;"
 mysql -u $USERNAME -p$PASSWORD berceuse < /root/Workshop/config/berceuse.sql
 
 echo -e "Reset : ok"
