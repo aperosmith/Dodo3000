@@ -18,7 +18,7 @@ Commencez par télécharger le programme d'installation NOOBS :
 
 > https://www.raspberrypi.org/downloads/noobs/
 
-Copier le contenu de l'archive sur une carte micro-SD. Il faut aussi placer un fichier ssh dans le répertoire racine de la carte. Le fichier peut être vide. Ce fichier est indispensable pour se connecter en ssh sur l'appareil. Les identifiants par défaut sont 'pi:raspberry'. Il est vivement conseiller de modifier ces identifiants.
+Copier le contenu de l'archive sur une carte micro-SD. Il faut aussi placer un fichier ssh dans le répertoire racine de la carte. Le fichier peut être vide. Ce fichier est indispensable pour se connecter en ssh sur l'appareil. Les identifiants par défaut sont 'pi:raspberry'. Il est vivement conseiller de modifier ces identifiants. Lors de l'installation, il faut choisir le système d'exploitation Raspbian (avec ou sans interface graphique).
 
 # Installation
 
@@ -32,3 +32,16 @@ cd Workshop
 ./setup.sh
 ```
 Ce script va installer les paquets requis sur le raspberry : Apache, Mysql-Server, PhpMyAdmin, ntp, screen. Il va aussi copier les configurations pour apache et PhpMyAdmin, et va aussi copier le portail web.
+
+Pour mettre à jour :
+```
+./update.sh
+```
+Pour remettre à zéro la base :
+```
+./reset.sh
+```
+Pour lancer manuellement le programme :
+```
+./berceuse.sh
+```
