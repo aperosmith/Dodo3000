@@ -29,6 +29,7 @@ export Yellow='\e[1;33m'
 #rm -rfv /root/Workshop
 #cp -vR ./Workshop /root/
 cd /root/Workshop
+chmod +x /root/Workshop/*.sh
 
 # --------------------
 # Services et dépendances
@@ -141,9 +142,8 @@ fi
 # Ajouter un
 cp -v ~/Workshop/config/myjob.conf /etc/init/
 
-# Composer
-# apt-get install composer
-# composer install
+chmod +x /root/Workshop/*.sh
+
 
 #touch ~.aws/credentials
 #echo '[Dieu]' >> ~.aws/credentials
