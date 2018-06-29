@@ -15,13 +15,13 @@
 <body class="homepage is-preload">
 <br>
 <br>
-<?php 
-	include('db.php'); 
+<?php
+	include('db.php');
 	$checkDate = date('Y-m-j');
-	for ($dayDateArray = 0; $dayDateArray < 50 ; $dayDateArray++) { 
+	for ($dayDateArray = 0; $dayDateArray < 50 ; $dayDateArray++) {
 	$checkDate =  date('Y-m-j',strToTime('-'.$dayDateArray.' day'));
 
-		
+
 		$req = 'SELECT `id` FROM `event` WHERE `event`.`date`="'.$checkDate.'"';
 		$tab= array();
 		if($recup = $bdd->query($req)){
@@ -34,13 +34,13 @@
 			echo '<h1 class="text-center">'.$checkDate.'</h1><br>
 					<table class="table table-striped">
 					  <tr>
-					    <th scope="col">Num Event</th>
-					    <th scope="col">Debut</th>
-					    <th scope="col">Fin</th>
-					    <th scope="col">Durée</th>
+					    <th class="text-center" scope="col">Num Event</th>
+					    <th class="text-center" scope="col">Debut</th>
+					    <th class="text-center" scope="col">Fin</th>
+					    <th class="text-center" scope="col">Durée</th>
 					  </tr>';
 
-			for ($x=0; $x < count($tab) ; $x++) { 
+			for ($x=0; $x < count($tab) ; $x++) {
 				$reqDebut = 'SELECT `debut` FROM `event` WHERE `event`.`id` ="'.$tab[$x].'"';
 				$reqDuree = 'SELECT `duree` FROM `event` WHERE `event`.`id` ="'.$tab[$x].'"';
 				$reqFin = 'SELECT `fin` FROM `event` WHERE `event`.`id` ="'.$tab[$x].'"';
@@ -56,7 +56,7 @@
 ?>
   </thead>
 
-  
+
 </table>
 
 
@@ -71,4 +71,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-
