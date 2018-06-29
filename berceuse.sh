@@ -1,2 +1,3 @@
 #!/bin/bash
-screen -S berceuse /root/Workshop/html/berceuse
+cd /root/Workshop/html/
+screen -d -m -S berceuse berceuse
