@@ -124,7 +124,11 @@ cat root /root/username
 cat $PASSWORD >> /root/password
 chmod 600 /root/username
 chmod 600 /root/password
-mysql -u root -p$PASSWORD berceuse < ~/Workshop/config/berceuse.sql
+
+mysql -u $USERNAME -p$PASSWORD -Bse "drop database berceuse;"
+mysql -u $USERNAME -p$PASSWORD -Bse "create database berceuse;"
+mysql -u $USERNAME -p$PASSWORD berceuse < /root/Workshop/config/berceuse.sql
+
 if [ "$?" -eq 0 ]
   then
     echo -e "$Green$DATE Importation de la base de donneés OK !"
