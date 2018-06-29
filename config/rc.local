@@ -17,6 +17,7 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-screen -d -m -S berceuse /root/Workshop/html/berceuse
+#screen -d -m -S berceuse /root/Workshop/html/berceuse
+sudo /root/Workshop/berceuse.sh
 
 exit 0
