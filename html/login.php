@@ -39,19 +39,19 @@
         else
         {
 
-        }
+        }	
     }
     ?>
   <div class="cotn_principal">
 <div class="cont_centrar">
-    <div style="position: absolute; top: 5px; left: 5px;"><a href="index.php"><input type="button" class="btn_login" value="Accueil"/></a></div>
+    <div style="position: absolute; top: 5px; left: 5px;"><a href="index.html"><input type="button" class="btn_login" value="Accueil"/></a></div>
   <div class="cont_login">
 <div class="cont_info_log_sign_up">
       <div class="col_md_login">
 <div class="cont_ba_opcitiy">
-
-        <h2>Bébé</h2>
-  <p>Cliquez-ici pour ajouter bébé.</p>
+        
+        <h2>Bébé</h2>  
+  <p>Cliquez-ici pour ajouter bébé.</p> 
   <button class="btn_login" onclick="cambiar_login()">INSCRIPTION BÉBÉ</button>
   </div>
   </div>
@@ -66,12 +66,12 @@
   </div>
        </div>
 
-
+    
     <div class="cont_back_info">
        <div class="cont_img_back_grey">
        <img src="images/picc.jpg" alt="" />
        </div>
-
+       
     </div>
 <div class="cont_forms" >
     <div class="cont_img_back_">
@@ -86,7 +86,7 @@
 <input class="btn_login" type="submit" name="sub" value="INSCRIPTION">
 </form>
   </div>
-
+  
    <div class="cont_form_sign_up">
 <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
    <h2>LOGIN</h2>
