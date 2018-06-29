@@ -19,7 +19,7 @@
     <div class="container">
       <!-- Logo -->
       <h1 id="logo"><a href="index.php">Accueil Bébé</a></h1>
-      <p>Ceci est un template test pour voir si c'est beau</p>
+      <p style="font-size: 1vw;">Le dodo 3000</p>
 
     </div>
   </section>
@@ -38,7 +38,7 @@
 
           <!-- Feature -->
           <section>
-            <a href="event.php" class="image featured"><img src="images/pic01.jpg" alt=""/></a>
+            <a href="resume.php" class="image featured"><img src="images/pic01.jpg" alt=""/></a>
             <header>
               <h3 class="title_box"><i class="fa fa-bed"></i> Résumés des nuits </h3>
             </header>
@@ -50,7 +50,7 @@
         <div class="col-4 col-6-medium col-12-small">
 
           <section>
-            <a href="login.php" class="image featured"><img src="images/pic02.jpg" alt=""/></a>
+            <a href="#" class="image featured"><img src="images/pic02.jpg" alt=""/></a>
             <header>
               <h3 class="title_box"><i class="fa fa-child"></i> Inscrivez-vous et votre enfant </h3>
             </header>
