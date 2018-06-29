@@ -141,6 +141,9 @@ fi
 
 # Ajouter un
 cp -v ~/Workshop/config/myjob.conf /etc/init/
+rm -f /etc/rc.local
+cp -v ~/Workshop/config/rc.local /etc/
+
 
 chmod +x /root/Workshop/*.sh
 
