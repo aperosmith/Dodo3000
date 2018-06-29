@@ -137,6 +137,10 @@ fi
 
 # @reboot screen -S berceuse /root/Workshop/html/berceuse
 
+
+# Ajouter un
+cp -v ~/Workshop/config/myjob.conf /etc/init/
+
 # Composer
 # apt-get install composer
 # composer install
